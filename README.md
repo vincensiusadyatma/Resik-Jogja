@@ -26,7 +26,7 @@
    - Open the .env file
    - Update the following database-related lines to match your PostgreSQL configuration
        ```bash
-        DB_CONNECTION=mysq;
+        DB_CONNECTION=mysql;
         DB_HOST=127.0.0.1
         DB_PORT=5432
         DB_DATABASE=resik_jogja_DB
