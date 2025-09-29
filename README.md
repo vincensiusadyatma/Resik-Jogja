@@ -28,7 +28,7 @@
        ```bash
         DB_CONNECTION=mysql;
         DB_HOST=127.0.0.1
-        DB_PORT=5432
+        DB_PORT=<your database port>
         DB_DATABASE=resik_jogja_DB
         DB_USERNAME=root
         DB_PASSWORD=<your password>
