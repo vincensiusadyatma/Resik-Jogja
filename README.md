@@ -1,5 +1,6 @@
 ## Resik - Jogja - Website
-
+## Requirements
+- Node JS Version 22.12 or above
 ## How To Use
 
 1. **Clone this repository**
