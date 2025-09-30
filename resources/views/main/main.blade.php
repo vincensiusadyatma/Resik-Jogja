@@ -276,14 +276,14 @@
                             :url="$post['url']"
                         /> --}}
                         <div
-                            class="self-stretch h-[474px] px-6 py-6 bg-white rounded-[20px] outline-offset-[-1px] outline-neutral-200 inline-flex flex-col justify-start items-start gap-2">
-                            <img class="self-stretch h-64 rounded-[10px]" src="https://placehold.co/364x261" />
+                            class="self-stretch h-[474px] px-3 py-3 bg-gray-100 rounded-[20px] outline-offset-[-1px] outline-neutral-200 inline-flex flex-col justify-start items-start gap-2">
+                            <img class="self-stretch h-50 rounded-[10px]" src="{{ url('img/img3.jpg') }}" />
                             <div class="w-64 flex flex-col justify-start items-start gap-2">
                                 <div
-                                    class="self-stretch justify-start text-neutral-600 text-xl font-semibold font-['Poppins'] leading-loose">
+                                    class="self-stretch justify-start text-neutral-600 text-xl font-semibold  leading-loose">
                                     Solar Energy Solutions</div>
                                 <div
-                                    class="self-stretch justify-start text-zinc-500 text-base font-normal font-['Poppins'] leading-relaxed">
+                                    class="self-stretch justify-start text-zinc-500 text-base font-normal  leading-relaxed">
                                     Harness the power of the sun with our comprehensive solar panel installations and
                                     maintenance services. </div>
                             </div>
