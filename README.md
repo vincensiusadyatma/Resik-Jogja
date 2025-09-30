@@ -49,3 +49,50 @@
 6. **Run backend**
    ```bash
    php artisan serve
+
+
+
+
+# API Documentation
+
+This API allows for user registration, login, logout, and health check, as well as testing the database connection.
+
+## Endpoints
+
+### 1. AUTH Endpoint
+#### `POST auth/register/handle`
+
+
+  **Request Body:**
+  ```bash
+  {
+    "username" : "<your username input html form>",
+    "fullname" : "<your fullname input html form>",
+    "age" : "<your age input html form>",
+    "email" : "<your email input html form>",
+    "password" : "<your password input html form>",
+
+  }
+   ```
+
+#### `POST auth/login/handle`
+
+
+  **Request Body:**
+  ```bash
+  {
+    "username" : "<your username input html form",
+    "password" : "<your password input html form>",
+
+  }
+   ```
+#### `POST auth/logout`
+
+
+  **Request Body:**
+  ```bash
+  {
+    without request data
+
+  }
+   ```
