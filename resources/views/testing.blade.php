@@ -7,7 +7,13 @@
   </head>
   <body>
     <h1 class="text-3xl font-bold underline text-amber-600">
-      Resik Jogja
+      Resik Jogjasss
+      @if(Auth::check())
+          <p>Welcome, {{ Auth::user()->username }}!</p>
+      @else
+          <p>You are not logged in.</p>
+      @endif
+
     </h1>
   </body>
 </html>
