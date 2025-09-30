@@ -249,6 +249,54 @@
         </div>
     </section>
 
+    <section class="py-20 ml-100 bg-white sm:py-10 lg:py-20">
+        <div class="inline-flex flex-col justify-center items-center gap-2.5 mb-30">
+            <div class="justify-start text-zinc-800 text-3xl font-medium">Client Voices</div>
+            <div class="w-[962px] text-center justify-start  text-zinc-800 text-5xl font-semibold  leading-[55.20px]">
+                Success Stories & Testimonials</div>
+        </div>
+
+        <div
+            class="w-[520px] mb-30 p-5 bg-white rounded-[20px] outline-offset-[-1px] outline-neutral-200 inline-flex flex-col justify-start items-start gap-2.5">
+            <div class="w-14 h-14 relative">
+                <div class="w-14 h-14 left-0 top-0 absolute bg-zinc-300"></div>
+                <div class="w-10 h-7 left-[9.33px] top-[14px] absolute bg-zinc-800"></div>
+            </div>
+            <div class="self-stretch flex flex-col justify-start items-start gap-5">
+                <div class="self-stretch flex flex-col justify-start items-start gap-2.5">
+                    <div class="self-stretch justify-start text-zinc-800 text-xl font-semibold leading-normal">
+                        Partnering with Samiul was a turning point for us</div>
+                    <div class="self-stretch justify-start text-zinc-800 text-base font-normal  leading-relaxed">
+                        Working with Samiul was a game-changer. He transformed our website's user experience, making it
+                        intuitive and visually stunning. Our customers love it!</div>
+                </div>
+                <div class="self-stretch flex flex-col justify-start items-start gap-2.5">
+                    <div class="inline-flex justify-start items-center gap-[5px]">
+                        <div class="w-5 h-5 relative">
+                            <div class="w-5 h-5 left-0 top-0 absolute bg-zinc-300"></div>
+                            <div class="w-4 h-4 left-[1.79px] top-[1.80px] absolute bg-yellow-500"></div>
+                        </div>
+                        <div class="w-5 h-5 relative">
+                            <div class="w-5 h-5 left-0 top-0 absolute bg-zinc-300"></div>
+                            <div class="w-4 h-4 left-[1.79px] top-[1.80px] absolute bg-yellow-500"></div>
+                        </div>
+                        <div class="w-5 h-5 relative">
+                            <div class="w-5 h-5 left-0 top-0 absolute bg-zinc-300"></div>
+                            <div class="w-4 h-4 left-[1.79px] top-[1.80px] absolute bg-yellow-500"></div>
+                        </div>
+                        <div class="w-5 h-5 relative">
+                            <div class="w-5 h-5 left-0 top-0 absolute bg-zinc-300"></div>
+                            <div class="w-4 h-4 left-[1.79px] top-[1.80px] absolute bg-yellow-500"></div>
+                        </div>
+                        <div class="w-5 h-5 relative">
+                            <div class="w-5 h-5 left-0 top-0 absolute bg-zinc-300"></div>
+                            <div class="w-4 h-4 left-[1.79px] top-[1.80px] absolute bg-yellow-500"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="py-12 bg-white sm:py-16 lg:py-20">
         <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="flex items-center justify-between mb-10">
@@ -293,4 +341,6 @@
             </div>
         </div>
     </section>
+
+    
 @endsection
