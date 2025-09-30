@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Resik Jogja')</title>
-    <link rel="icon" type="image/x-icon" href='{{ asset('img/dusun-logo.png') }}'>
+    <link rel="icon" type="image/x-icon" href='{{ asset('img/img1.png') }}'>
     @vite('resources/css/app.css')
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <style>

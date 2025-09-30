@@ -185,7 +185,7 @@
 
         {{-- 1. Background Image --}}
         <div class="absolute inset-0 z-0">
-            <img src="{{ url('img/img.png') }}" class="object-cover w-full h-full">
+            <img src="{{ url('img/img3.jpg') }}" class="object-cover w-full h-full">
         </div>
 
         {{-- 2. Gradient Overlay --}}
