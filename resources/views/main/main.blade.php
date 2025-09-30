@@ -3,8 +3,7 @@
 @section('content')
     <section class="relative w-full min-h-screen flex items-center">
         {{-- Background Image --}}
-        <div class="absolute inset-0 z-0 bg-center bg-cover"
-            style="background-image: url('https://images.unsplash.com/photo-1508283823382-b72d2424d550?q=80&w=2070&auto=format&fit=crop');">
+        <div class="absolute inset-0 z-0 bg-center bg-cover" style="background-image: url('img/img.png');">
         </div>
 
 
@@ -55,27 +54,16 @@
     <section class="py-16 bg-white sm:py-24">
         <div class="px-6 mx-auto max-w-7xl lg:px-8">
             <div class="grid items-center grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
-                <div class="w-full h-96 lg:h-[450px] rounded-3xl overflow-hidden shadow-xl">
+                <div class="w-full h-96 lg:h-[350px] rounded-3xl overflow-hidden shadow-xl">
                     <div class="w-full h-full swiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="https://images.unsplash.com/photo-1508283823382-b72d2424d550?q=80&w=1920&auto=format&fit=crop"
-                                    alt="Wind turbines on a green hill at sunset" class="object-cover w-full h-full">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://images.unsplash.com/photo-1543488769-994dd656254c?q=80&w=1920&auto=format&fit=crop"
-                                    alt="Solar panels in a field" class="object-cover w-full h-full">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://images.unsplash.com/photo-1621361229712-83fb67114de2?q=80&w=1920&auto=format&fit=crop"
-                                    alt="Close-up of a wind turbine blade" class="object-cover w-full h-full">
-                            </div>
+                            <img src="{{ url('img/img2.png') }}" class="object-cover w-full h-full">
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
 
-                
+
                 <div class="text-left">
                     <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         About Us
@@ -263,7 +251,6 @@
 
     <section class="py-12 bg-white sm:py-16 lg:py-20">
         <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            {{-- Header Seksi --}}
             <div class="flex items-center justify-between mb-10">
                 <h2 class="text-3xl font-bold text-gray-900">
                     Blog & News
@@ -281,17 +268,27 @@
             {{-- Slider Container --}}
             <div class="swiper blog-slider">
                 <div class="swiper-wrapper">
-                    {{-- Loop data artikel dari controller --}}
-                    {{-- @foreach ($posts as $post)
                     <div class="swiper-slide">
-                        <x-post-card 
+                        {{-- <x-post-card 
                             :image="$post['image']"
                             :title="$post['title']"
                             :excerpt="$post['excerpt']"
                             :url="$post['url']"
-                        />
+                        /> --}}
+                        <div
+                            class="self-stretch h-[474px] px-6 py-6 bg-white rounded-[20px] outline-offset-[-1px] outline-neutral-200 inline-flex flex-col justify-start items-start gap-2">
+                            <img class="self-stretch h-64 rounded-[10px]" src="https://placehold.co/364x261" />
+                            <div class="w-64 flex flex-col justify-start items-start gap-2">
+                                <div
+                                    class="self-stretch justify-start text-neutral-600 text-xl font-semibold font-['Poppins'] leading-loose">
+                                    Solar Energy Solutions</div>
+                                <div
+                                    class="self-stretch justify-start text-zinc-500 text-base font-normal font-['Poppins'] leading-relaxed">
+                                    Harness the power of the sun with our comprehensive solar panel installations and
+                                    maintenance services. </div>
+                            </div>
+                        </div>
                     </div>
-                @endforeach --}}
                 </div>
             </div>
         </div>
