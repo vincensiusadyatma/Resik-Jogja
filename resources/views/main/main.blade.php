@@ -297,7 +297,7 @@
             </div>
         </div>
     </section>
-    <section class="py-12 bg-white sm:py-16 lg:py-20">
+    <section class="py-12 bg-white sm:py-16 lg:py-20" id="artikelSection">
         <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="flex items-center justify-between mb-10">
                 <h2 class="text-3xl font-bold text-gray-900">
