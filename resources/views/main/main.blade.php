@@ -257,7 +257,7 @@
         </div>
 
         <div
-            class="w-[520px] mb-30 p-5 bg-white rounded-[20px] outline-offset-[-1px] outline-neutral-200 inline-flex flex-col justify-start items-start gap-2.5">
+            class="w-[520px] mb-30 p-5 bg-gray-200 rounded-[20px] outline-offset-[-1px] outline-neutral-200 inline-flex flex-col justify-start items-start gap-2.5">
             <div class="w-14 h-14 relative">
                 <div class="w-14 h-14 left-0 top-0 absolute bg-zinc-300"></div>
                 <div class="w-10 h-7 left-[9.33px] top-[14px] absolute bg-zinc-800"></div>
