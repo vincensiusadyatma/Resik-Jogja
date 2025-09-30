@@ -18,10 +18,17 @@ class User extends Authenticatable
      * @var list<string>
      */
     protected $fillable = [
-        'name',
+        'username',
+        'fullname',
+        'age',
         'email',
         'password',
     ];
+
+    public function roleOwnerships()
+    {
+        return $this->hasMany(RoleOwnership::class);
+    }
 
     /**
      * The attributes that should be hidden for serialization.
