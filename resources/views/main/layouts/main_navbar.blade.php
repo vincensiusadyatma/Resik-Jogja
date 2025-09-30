@@ -16,13 +16,9 @@
 
             <div class="hidden md:block">
                 <div class="ml-10 flex items-baseline space-x-8">
-                    <a href="#"
+                    <a href="{{ route('home') }}"
                         class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Home</a>
-                    <a href="{{ route('about') }}" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">About us </a>
-                    <a href="#"
-                        class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Forum</a>
-                    <a href="{{ route("artikel") }}"
-                        class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Artikel</a>
+                    <a href="/forum" class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">Forum</a>
                 </div>
             </div>
 
