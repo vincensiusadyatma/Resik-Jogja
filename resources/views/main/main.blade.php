@@ -14,15 +14,15 @@
             <div class="grid items-center grid-cols-1 gap-12 md:grid-cols-2">
 
 
-        <div class="text-left">
-            <h1 class="text-4xl font-bold leading-tight tracking-tight text-gray-800 md:text-5xl lg:text-6xl">
-                Jogja Bersih, Hijau, dan Nyaman
-            </h1>
-            <p class="max-w-lg mt-6 text-lg text-gray-600">
-                Resik Jogja mengajak semua warga untuk menjaga kebersihan lingkungan, menanam pohon, 
-                dan hidup lebih ramah lingkungan untuk masa depan yang lebih baik.
-            </p>
-        </div>
+                <div class="text-left">
+                    <h1 class="text-4xl font-bold leading-tight tracking-tight text-gray-800 md:text-5xl lg:text-6xl">
+                        Jogja Bersih, Hijau, dan Nyaman
+                    </h1>
+                    <p class="max-w-lg mt-6 text-lg text-gray-600">
+                        Resik Jogja mengajak semua warga untuk menjaga kebersihan lingkungan, menanam pohon,
+                        dan hidup lebih ramah lingkungan untuk masa depan yang lebih baik.
+                    </p>
+                </div>
 
 
                 <div class="flex justify-center mt-10 md:mt-0 md:justify-end">
@@ -32,7 +32,8 @@
                             Mari Kita Jaga Kota Jogja
                         </h2>
                         <p class="mt-2 text-gray-700">
-                          Bergabunglah menjaga kebersihan lingkungan, menanam pohon, dan hidup lebih ramah lingkungan untuk masa depan yang lebih baik
+                            Bergabunglah menjaga kebersihan lingkungan, menanam pohon, dan hidup lebih ramah lingkungan
+                            untuk masa depan yang lebih baik
                         </p>
                         <div class="mt-8">
                             <a href="#"
@@ -248,31 +249,34 @@
         </div>
     </section>
 
-   <section class="py-20 bg-white sm:py-10 lg:py-20">
-    <div class="flex flex-col items-center gap-2.5 mb-12 text-center">
-        <div class="text-zinc-800 text-3xl font-medium">Client Voices</div>
-        <div class="max-w-[962px] w-full text-zinc-800 text-5xl font-semibold leading-[55.20px]">
-            Success Stories & Testimonials
+    <section class="py-20 bg-white sm:py-10 lg:py-20">
+        <div class="flex flex-col items-center gap-2.5 mb-12 text-center">
+            <div class="text-zinc-800 text-3xl font-medium">Client Voices</div>
+            <div class="max-w-[962px] w-full text-zinc-800 text-5xl font-semibold leading-[55.20px]">
+                Success Stories & Testimonials
+            </div>
         </div>
-    </div>
 
-    <div class="max-w-[520px] w-full mx-auto mb-12 p-5 bg-gray-200 rounded-[20px] outline-offset-[-1px] outline-neutral-200 flex flex-col gap-2.5">
-        <div class="w-14 h-14 bg-zinc-300"></div>
-        <div class="flex flex-col gap-5">
-            <div>
-                <div class="text-zinc-800 text-xl font-semibold">Partnering with Samiul was a turning point for us</div>
-                <div class="text-zinc-800 text-base">Working with Samiul was a game-changer. He transformed our website's user experience, making it intuitive and visually stunning. Our customers love it!</div>
-            </div>
-            <div class="flex gap-1">
-                <div class="w-5 h-5 bg-yellow-500 rounded"></div>
-                <div class="w-5 h-5 bg-yellow-500 rounded"></div>
-                <div class="w-5 h-5 bg-yellow-500 rounded"></div>
-                <div class="w-5 h-5 bg-yellow-500 rounded"></div>
-                <div class="w-5 h-5 bg-yellow-500 rounded"></div>
+        <div
+            class="max-w-[520px] w-full mx-auto mb-12 p-5 bg-gray-200 rounded-[20px] outline-offset-[-1px] outline-neutral-200 flex flex-col gap-2.5">
+            <div class="w-14 h-14 bg-zinc-300"></div>
+            <div class="flex flex-col gap-5">
+                <div>
+                    <div class="text-zinc-800 text-xl font-semibold">Partnering with Samiul was a turning point for us
+                    </div>
+                    <div class="text-zinc-800 text-base">Working with Samiul was a game-changer. He transformed our
+                        website's user experience, making it intuitive and visually stunning. Our customers love it!</div>
+                </div>
+                <div class="flex gap-1">
+                    <div class="w-5 h-5 bg-yellow-500 rounded"></div>
+                    <div class="w-5 h-5 bg-yellow-500 rounded"></div>
+                    <div class="w-5 h-5 bg-yellow-500 rounded"></div>
+                    <div class="w-5 h-5 bg-yellow-500 rounded"></div>
+                    <div class="w-5 h-5 bg-yellow-500 rounded"></div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <section class="py-12 bg-white sm:py-16 lg:py-20" id="artikelSection">
         <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -318,6 +322,4 @@
             </div>
         </div>
     </section>
-
-    
 @endsection

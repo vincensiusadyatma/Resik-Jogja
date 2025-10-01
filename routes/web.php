@@ -10,7 +10,7 @@ Route::get('/', function () {
 
 
 Route::get('/artikel', function () {
-    return view('main.articles_page_main');
+    return view('core.articles');
 })->name('artikel');
 
 
@@ -18,13 +18,22 @@ Route::get('/home', function () {
     return view('main.main');
 })->name('home');
 
+
+Route::get('/forum/dashboard', function () {
+    return view('core.forum.dashboard_forum');
+});
+
+Route::get('/forum/posts', function () {
+    return view('core.forum.post_forum');
+});
+
 Route::get('/forum', function () {
-    return view('main.forum');
+    return view('core.forum.dashboard_forum');
 })->name('forum');
 
 Route::prefix('auth')->middleware('guest')->group(function () {
     Route::get('/login', [AuthController::class, 'showLogin'])->name('show-login');
-     Route::get('/register', [AuthController::class, 'showRegister'])->name('show-register');
+    Route::get('/register', [AuthController::class, 'showRegister'])->name('show-register');
     Route::post('/register/handle', [AuthController::class, 'handleRegister'])->name('handle-register');
     Route::post('/login/handle', [AuthController::class, 'handleLogin'])->name('handle-login');
 });
