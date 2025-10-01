@@ -17,7 +17,10 @@ Route::get('/artikel', function () {
 Route::get('/home', function () {
     return view('main.main');
 })->name('home');
-   
+
+Route::get('/forum', function () {
+    return view('main.forum');
+})->name('forum');
 
 Route::prefix('auth')->middleware('guest')->group(function () {
     Route::post('/register/handle', [AuthController::class, 'handleRegister'])->name('handle-register');
