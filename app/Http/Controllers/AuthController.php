@@ -12,6 +12,14 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
+    public function showLogin(Request $request){
+        return view('login');
+    }
+
+     public function showRegister(Request $request){
+        return view('register');
+    }
+    
     public function handleRegister(Request $request){
         dd(Auth::user());
    
