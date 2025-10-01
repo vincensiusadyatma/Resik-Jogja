@@ -2,18 +2,19 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-20">
 
+            <!-- Logo -->
             <div class="flex-shrink-0">
-                <a href="/" class="flex items-center space-x-2">
-                    <svg class="h-10 w-10" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="27.5" cy="27.5" r="27.5" fill="#D4FF00" />
-                        <path
-                            d="M22.0957 14V41H28.8157V28.57H34.5957V22.6H28.8157V19.03C28.8157 18.23 28.9057 17.68 29.0857 17.38C29.2657 17.08 29.6757 16.93 30.3157 16.93H34.6557V14H29.7457C28.1657 14 26.9807 14.39 26.1907 15.17C25.4007 15.95 25.0057 17.06 25.0057 18.5V22.6H22.0957V28.57H25.0057V41H22.0957V14Z"
-                            fill="white" />
-                    </svg>
-                    <span class="text-2xl font-bold text-gray-800 tracking-wider">Logoipsum</span>
+                <a href="/" class="flex items-center space-x-3 group">
+                    <img src="{{ asset('img/resik_jogja_logo3.png') }}" 
+                         alt="Resik Jogja Logo" 
+                         class="h-12 w-12 object-contain">
+                    <span class="text-2xl font-extrabold tracking-widest text-blue-400 group-hover:text-green-900 transition">
+                        Resik <span class="text-gray-800 group-hover:text-gray-600">Jogja</span>
+                    </span>
                 </a>
             </div>
 
+            <!-- Menu Desktop -->
             <div class="hidden md:block">
                 <div class="ml-10 flex items-baseline space-x-8">
                     <a href="{{ route('home') }}"
@@ -23,6 +24,7 @@
                 </div>
             </div>
 
+            <!-- Auth Desktop -->
             <div class="hidden md:block">
                 <div class="ml-4 flex items-center md:ml-6 space-x-6">
                     <a href="#" class="text-gray-600 hover:text-gray-900 text-sm font-medium">Login</a>
@@ -32,6 +34,7 @@
                 </div>
             </div>
 
+            <!-- Mobile Button -->
             <div class="-mr-2 flex md:hidden">
                 <button type="button"
                     class="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
@@ -53,6 +56,7 @@
         </div>
     </div>
 
+    <!-- Mobile Menu -->
     <div class="md:hidden" id="mobile-menu">
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a href="#"

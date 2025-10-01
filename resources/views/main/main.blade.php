@@ -3,7 +3,7 @@
 @section('content')
     <section class="relative w-full min-h-screen flex items-center">
         {{-- Background Image --}}
-        <div class="absolute inset-0 z-0 bg-center bg-cover" style="background-image: url('img/img.png');">
+        <div class="absolute inset-0 z-0 bg-center bg-cover" style="background-image: url('img/tugu_jogja_header.png');">
         </div>
 
 
