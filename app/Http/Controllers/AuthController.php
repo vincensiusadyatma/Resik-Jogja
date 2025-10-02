@@ -21,54 +21,47 @@ class AuthController extends Controller
         return view('auth.register');
     }
     
-    public function handleRegister(Request $request){
-        dd(Auth::user());
-   
-        $request->validate([
-            'username' => 'required|string|max:50|unique:users,username',
-            'fullname' => 'required|string|max:255',
-            'age'      => 'required|integer|min:17',
-            'email'    => 'required|string|email|max:255|unique:users,email',
-            'password' => 'required|string|min:8'
+   public function handleRegister(Request $request){
+    $request->validate([
+        'username' => 'required|string|max:50|unique:users,username',
+        'fullname' => 'required|string|max:255',
+        'age'      => 'required|integer|min:17',
+        'email'    => 'required|string|email|max:255|unique:users,email',
+        'password' => 'required|string|min:8'
+    ]);
+
+    DB::beginTransaction();
+
+    try {
+        $user = User::create([
+            'username' => $request->username,
+            'fullname' => $request->fullname,
+            'age'      => $request->age,
+            'email'    => $request->email,
+            'password' => Hash::make($request->password),
         ]);
 
-        DB::beginTransaction();
+        DB::table('role_ownerships')->insert([
+            'user_id' => $user->id,
+            'role_id' => 2, 
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
 
-        try {
-         
-            $user = User::create([
-                'username' => $request->username,
-                'fullname' => $request->fullname,
-                'age'      => $request->age,
-                'email'    => $request->email,
-                'password' => Hash::make($request->password),
-            ]);
+        DB::commit();
 
-          
-            DB::table('role_ownerships')->insert([
-                'user_id' => $user->id,
-                'role_id' => 2, 
-                'created_at' => now(),
-                'updated_at' => now(),
-            ]);
+        Auth::login($user);
 
-            DB::commit();
+        return redirect()->route('show-main-forum')->with('success', 'Registrasi berhasil!');
+    } catch (\Throwable $th) {
+        DB::rollBack();
+        Log::error('Registration Error: ' . $th->getMessage());
 
-         
-            Auth::login($user);
-            
-
-            return redirect()->route('show-main-forum')->with('success', 'Registration successful');
-
-        } catch (\Throwable $th) {
-     
-            DB::rollBack();
-            Log::error('Registration Error: ' . $th->getMessage());
-
-            return redirect()->route('main')
-                ->withErrors(['error' => 'Registration failed. Please try again later.']);
-        }
+        return redirect()->route('main')
+            ->with('error', 'Registrasi gagal. Silakan coba lagi nanti.');
     }
+}
+
 
      public function handleLogin(Request $request){
 

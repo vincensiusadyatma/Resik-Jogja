@@ -33,7 +33,7 @@
                         <div class="relative">
                             <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300" id="user-menu-button" aria-expanded="false">
                                 <span class="sr-only">Open user menu</span>
-                                <img class="w-8 h-8 rounded-full" src="{{ Auth::user()->profile_photo_url ?? '/img/default-user.png' }}" alt="user photo">
+                                <img class="w-8 h-8 rounded-full" src="{{ Auth::user()->profile_photo_url ?? '/img/profile1.png' }}" alt="user photo">
                             </button>
                             <!-- Dropdown menu -->
                             <div class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-sm hidden" id="user-dropdown">

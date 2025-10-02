@@ -23,19 +23,16 @@
             animation: infinite-scroll 40s linear infinite;
         }
 
+        .swal2-container .swal2-toast {
+            min-width: 200px;      
+            max-width: 250px;      
+            padding: 0.5em 1em;    
+            font-size: 0.85rem;   
+        }
 
-    
-/* Membuat SweetAlert2 toast lebih kecil dan pendek */
-.swal2-container .swal2-toast {
-    min-width: 200px;      /* default biasanya 300px */
-    max-width: 250px;      /* atur maksimal panjang */
-    padding: 0.5em 1em;    /* padding lebih compact */
-    font-size: 0.85rem;    /* font lebih kecil */
-}
-
-.swal2-container .swal2-toast .swal2-title {
-    font-size: 0.85rem;    /* title lebih kecil */
-    margin: 0;
+        .swal2-container .swal2-toast .swal2-title {
+            font-size: 0.85rem;   
+            margin: 0;
 }
 
 
