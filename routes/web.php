@@ -21,3 +21,7 @@ Route::get('/dashboard_admin', function () {
 Route::get('/user_admin', function () {
     return view('.user_admin');
 })->name('admin.user');
+
+Route::get('/artikel_admin', function () {
+    return view('.artikel_admin');
+})->name('admin.artikel');
