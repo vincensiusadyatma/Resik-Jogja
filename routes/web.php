@@ -44,7 +44,7 @@ Route::prefix('auth')->group(function () {
 
 
 Route::middleware(['CheckRole:user'])->prefix('forum')->group(function () {
-     Route::get('/', [ForumController::class, 'showMain'])->name('show-main-forum');
+    Route::get('/', [ForumController::class, 'showMain'])->name('show-main-forum');
 });
 
 Route::get('/dashboard_admin', function () {
