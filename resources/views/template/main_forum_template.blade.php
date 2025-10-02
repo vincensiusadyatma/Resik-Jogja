@@ -22,9 +22,24 @@
         .animate-infinite-scroll {
             animation: infinite-scroll 40s linear infinite;
         }
+
+        .swal2-container .swal2-toast {
+            min-width: 200px;      
+            max-width: 250px;      
+            padding: 0.5em 1em;    
+            font-size: 0.85rem;   
+        }
+
+        .swal2-container .swal2-toast .swal2-title {
+            font-size: 0.85rem;   
+            margin: 0;
+}
+
+
     </style>
 
 <body class="bg-white text-gray-900 font-sans leading-normal">
+    @include('sweetalert::alert')
     @include('main.layouts.main_navbar')
     <div class="flex h-screen bg-white-800">
 

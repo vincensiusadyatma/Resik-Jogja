@@ -33,4 +33,14 @@
     @include('main.layouts.footer_main')
 </body>
 
+<script>
+    const userBtn = document.getElementById('user-menu-button');
+    const userDropdown = document.getElementById('user-dropdown');
+
+    userBtn.addEventListener('click', () => {
+        userDropdown.classList.toggle('hidden');
+    });
+</script>
+
+
 </html>
