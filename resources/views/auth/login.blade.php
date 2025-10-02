@@ -36,7 +36,7 @@
             </div>
 
             <!-- Form -->
-            <form action="#" method="POST" class="space-y-6">
+            <form action="{{ route('handle-login') }}" method="POST" class="space-y-6">
                 @csrf
 
                 <div>

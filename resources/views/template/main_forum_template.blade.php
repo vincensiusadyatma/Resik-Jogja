@@ -22,9 +22,27 @@
         .animate-infinite-scroll {
             animation: infinite-scroll 40s linear infinite;
         }
+
+
+    
+/* Membuat SweetAlert2 toast lebih kecil dan pendek */
+.swal2-container .swal2-toast {
+    min-width: 200px;      /* default biasanya 300px */
+    max-width: 250px;      /* atur maksimal panjang */
+    padding: 0.5em 1em;    /* padding lebih compact */
+    font-size: 0.85rem;    /* font lebih kecil */
+}
+
+.swal2-container .swal2-toast .swal2-title {
+    font-size: 0.85rem;    /* title lebih kecil */
+    margin: 0;
+}
+
+
     </style>
 
 <body class="bg-white text-gray-900 font-sans leading-normal">
+    @include('sweetalert::alert')
     @include('main.layouts.main_navbar')
     <div class="flex h-screen bg-white-800">
 

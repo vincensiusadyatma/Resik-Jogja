@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class AuthController extends Controller
 {
@@ -57,10 +58,10 @@ class AuthController extends Controller
             Auth::login($user);
             
 
-            return redirect()->route('main')->with('success', 'Registration successful');
+            return redirect()->route('show-main-forum')->with('success', 'Registration successful');
 
         } catch (\Throwable $th) {
-           
+     
             DB::rollBack();
             Log::error('Registration Error: ' . $th->getMessage());
 
@@ -72,18 +73,23 @@ class AuthController extends Controller
      public function handleLogin(Request $request){
 
         $credentials = $request->validate([
-            'username' => 'required|string',
+            'email' => 'required|string',
             'password' => 'required|string',
         ], [
-            'username.required' => 'Username tidak boleh kosong.',
+            'email.required' => 'email tidak boleh kosong.',
             'password.required' => 'Password tidak boleh kosong.',
         ]);
 
-       
+      
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
+       toast('Selamat Datang 👋', 'success')
+    ->position('top-end')
+    ->timerProgressBar() // ada progress bar tipis
+    ->autoClose(2000);   // cepat hilang
 
-            return redirect()->route('main')->with('success', 'Login successful.');
+
+            return redirect()->route('show-main-forum')->with('success', 'Login successful.');
         }
 
         return back()->withErrors([
